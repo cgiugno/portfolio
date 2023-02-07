@@ -1,0 +1,186 @@
+{% extends "base.html" %} 
+
+{% block title %}C. E. Giugno, Artwork{% endblock %}
+
+{% block head %}
+{{ super() }}
+<style>
+    .row {
+        margin: 2%;
+        /* padding-right: 10%; */
+    }
+    .artwork {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        text-align: center;
+        color:  rgb(117, 139, 161) !important;
+    }
+    .thumbnail {
+        border: rgb(117, 139, 161);
+        border-radius: 5px;
+    }
+    .thumbnail:hover , .thumbnail:focus{
+        box-shadow: 5px 0px 50px  rgb(117, 139, 161);;
+    }
+    .thumbnail p {
+        text-align: center;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        color:  rgb(117, 139, 161) !important;
+        margin-top: 8px;
+    }
+    .link , .link:hover, .link:focus{
+        text-decoration: none;
+    }
+    .thumbnail a img { 
+        width: 100%;
+    }
+</style>
+{% endblock %}
+
+{% block page_content %}
+<h2 class="artwork">Artwork</h2>
+<div class="row text-align: center">
+    <div class="col-sm-4">
+        <div class="thumbnail">
+            <a class="link" href="{{ url_for('static', filename='img/portfolio/athena.png') }}" target="_blank">
+                <img src="{{ url_for('static', filename='img/portfolio/athena.png') }}" alt="Athena Design for Divine Judgement video game.">
+                <p><strong>Athena.</strong></p>
+                <p>Athena, <i>Divine Judgement.</i> Digital Media.</p>
+            </a>
+        </div>
+    </div>
+    <div class="col-sm-4">
+        <div class="thumbnail">
+            <a class="link" href="{{ url_for('static', filename='img/portfolio/aphrodite.png') }}" target="_blank">
+                <img src="{{ url_for('static', filename='img/portfolio/aphrodite.png') }}" alt="Aphrodite Design for Divine Judgement video game.">
+                <p><strong>Aphrodite.</strong></p>
+                <p>Aphrodite, <i>Divine Judgement.</i> Digital Media.</p>
+            </a>
+        </div>
+    </div>
+    <div class="col-sm-4">
+        <div class="thumbnail">
+            <a class="link" href="{{ url_for('static', filename='img/portfolio/artemis.png') }}" target="_blank">
+                <img src="{{ url_for('static', filename='img/portfolio/artemis.png') }}" alt = "Artemis Design for Divine Judgement video game.">
+                <p><strong>Artemis.</strong></p>
+                <p>Artemis, <i>Divine Judgement.</i> Digital Media.</p>
+            </a>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-4 ">
+        <div class="thumbnail">
+            <a class="link" href="{{ url_for('static', filename='img/portfolio/persephone.png') }}" target="_blank">
+                <img src="{{ url_for('static', filename='img/portfolio/persephone.png') }}" alt = "Persephone Design for Divine Judgement video game.">
+                <p><strong>Persephone.</strong></p>
+                <p>Persephone, <i>Divine Judgement.</i> Digital Media.</p>
+            </a>
+        </div>
+    </div>
+    <div class="col-sm-4">
+        <div class="thumbnail">
+            <a class="link" href="{{ url_for('static', filename='img/portfolio/oilpastel.JPG') }}" target="_blank">
+                <img src="{{ url_for('static', filename='img/portfolio/oilpastel.JPG') }}" alt = "Fleeting Reflection.">
+                <p><strong>Fleeting Reflection.</strong></p>
+                <p>Oil Pastel.</p>
+            </a>
+        </div>
+    </div>
+    <div class="col-sm-4">
+        <div class="thumbnail">
+            <a class="link" href="{{ url_for('static', filename='img/portfolio/demeter.png') }}" target="_blank">
+                <img src="{{ url_for('static', filename='img/portfolio/demeter.png') }}" alt = "Demeter Design for Divine Judgement video game.">
+                <p><strong>Demeter.</strong></p>
+                <p>Demeter, <i>Divine Judgement.</i> Digital Media.</p>
+            </a>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-4">
+        <div class="thumbnail">
+            <a class="link" href="{{ url_for('static', filename='img/portfolio/clea.png') }}" target="_blank">
+                <img src="{{ url_for('static', filename='img/portfolio/clea.png') }}" alt = "Clea Strange, Sorceress Supreme Redesign.">
+                <p><strong>Clea Strange, Sorceress Supreme Redesign</strong></p>
+                <p>Clea Strange, Marvel. Digital Media.</p>
+            </a>
+        </div>
+    </div>
+    <div class="col-sm-4">
+        <div class="thumbnail">
+            <a class="link" href="{{ url_for('static', filename='img/portfolio/hephaestus.png') }}" target="_blank">
+                <img src="{{ url_for('static', filename='img/portfolio/hephaestus.png') }}" alt = "Hephaestus Design for Divine Judgement video game.">
+                <p><strong>Hephaestus.</strong></p>
+                <p>Hephaestus, <i>Divine Judgement.</i> Digital Media.</p>
+            </a>
+        </div>
+    </div>
+    <div class="col-sm-4">
+        <div class="thumbnail">
+            <a class="link" href="{{ url_for('static', filename='img/portfolio/dookula.png') }}" target="_blank">
+                <img src="{{ url_for('static', filename='img/portfolio/dookula.png') }}" alt = "Count Dooku, Monster Cereal Parody.">
+                <p><strong>Count Dook-ula.</strong></p>
+                <p>Count Dooku, <i>Star Wars</i>. Digital Media.</p>
+            </a>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-4">
+        <div class="thumbnail">
+            <a class="link" href="{{ url_for('static', filename='img/portfolio/ventress.png') }}" target="_blank">
+                <img src="{{ url_for('static', filename='img/portfolio/ventress.png') }}" alt = "Asajj Ventress, Disney Princess Parody.">
+                <p><strong>If Disney owns <i>Star Wars</i>, is Asajj Ventress a Disney Princess?</strong></p>
+                <p>Asajj Ventress, <i>Star Wars</i>. Digital Media.</p>
+            </a>
+        </div>
+    </div>
+    <div class="col-sm-4">
+        <div class="thumbnail">
+            <a class="link" href="{{ url_for('static', filename='img/portfolio/generalgrievous.png') }}" target="_blank">
+                <img src="{{ url_for('static', filename='img/portfolio/generalgrievous.png') }}" alt = "General Grievous, Riding a Goofy Too-Small Star Wars Vehicle.">
+                <p><strong>General Grievous Goes for a Drive.</strong></p>
+                <p>General Grievous, <i>Star Wars</i>. Digital Media.</p>
+            </a>
+        </div>
+    </div>
+    <div class="col-sm-4">
+        <div class="thumbnail">
+            <a class="link" href="{{ url_for('static', filename='img/portfolio/macewindu.png') }}" target="_blank">
+                <img src="{{ url_for('static', filename='img/portfolio/macewindu.png') }}" alt = "Mace Windu drinking a flask of water.">
+                <p><strong>A True Jedi Hydrates.</strong></p>
+                <p>Mace Windu, <i>Star Wars</i>. Digital Media.</p>
+            </a>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-4">
+        <div class="thumbnail">
+            <a class="link" href="{{ url_for('static', filename='img/portfolio/max_tableau.png') }}" target="_blank">
+                <img src="{{ url_for('static', filename='img/portfolio/max_tableau.png') }}" alt = "Staring into the Void">
+                <p><strong>Staring into the Void.</strong></p>
+                <p>Maxwell, <i>Don't Starve.</i> Digital Media.</p>
+            </a>
+        </div>
+    </div>
+    <div class="col-sm-4">
+        <div class="thumbnail">
+            <a class="link" href="{{ url_for('static', filename='img/portfolio/stilllife.JPG') }}" target="_blank">
+                <img src="{{ url_for('static', filename='img/portfolio/stilllife.JPG') }}" alt = "Still Life.">
+                <p><strong>Still Life.</strong></p>
+                <p>Charcoal.</p>
+            </a>
+        </div>
+    </div>
+    <div class="col-sm-4">
+        <div class="thumbnail">
+            <a class="link" href="{{ url_for('static', filename='img/portfolio/generalgrievous.png') }}" target="_blank">
+                <img src="{{ url_for('static', filename='img/portfolio/gg_drumming.png') }}" alt = "General Grievous, Drumming with Four Lightsabers.">
+                <p><strong>General Grievous Plays the Drums.</strong></p>
+                <p>General Grievous, <i>Star Wars</i>. Digital Media.</p>
+            </a>
+        </div>
+    </div>
+</div>
+{% endblock %}
