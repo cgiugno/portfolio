@@ -1,0 +1,69 @@
+{% extends "base.html" %} 
+
+{% block title %}C. E. Giugno, Articles{% endblock %}
+
+{% block head %}
+{{ super() }}
+<style>
+    .article {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        text-align: center;
+        color:  rgb(117, 139, 161) !important;
+    }
+    .desc {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        color: white;
+    }
+    .link , .link:hover, .link:focus{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        color: white;
+        text-decoration: none;
+    }
+    .col-sm-4 {
+        padding: 1%;
+    }
+    .panel {
+        min-height: 250px;
+        height: auto;
+        padding: 5%;
+        background-image: radial-gradient( rgb(84, 101, 119), rgb(117, 139, 161));
+    }
+    .panel:hover {
+        box-shadow: 5px 0px 40px  rgb(117, 139, 161);
+    }
+</style>
+{% endblock %}
+{% block page_content %}
+<div class="container">
+    <h2 class="article">Articles</h2>
+    <div class="row text-center">
+        <div class="col-sm-4">
+            <div class="panel">
+                <a class="link" href="https://thedailyfandom.org/anxiety-chances-life-is-strange/" target="_blank">
+                    <h4>Anxiety + Second Chances In "Life Is Strange"</h4>
+                    <p class = "desc">The hit adventure game “Life is Strange” is all about choices. Awakening from a disconcerting dream in the middle of class, you, an awkward teen photography student, suddenly find yourself with the strange ability to rewind time. But that’s the least of your problems....</p>
+                </a>
+            </div>
+        </div>
+        
+        <div class="col-sm-4">
+            <div class="panel">
+                <a class="link" href="https://thedailyfandom.org/she-ras-final-season-need-to-know/" target="_blank">
+                    <h4>Everything You Need To Know Before She-Ra's Final Season</h4>
+                    <p class="desc">We must be strong. We must be brave… because the final season of She-Ra and the Princesses of Power is releasing on Netflix May 15th.
+                        Let's take a run through of all that's been happening in Etheria the past few seasons and what fans might expect from the upcoming finale.</p>
+                </a>
+            </div>
+        </div>
+    
+        <div class="col-sm-4">
+            <div class="panel">
+                <a class="link" href="https://thedailyfandom.org/celebrating-bonds-in-pokemon-anime/" target="_blank">
+                    <h4>Celebrating Bonds In The Pokemon Anime</h4>
+                    <p class = "desc">On June 14th, Netflix released the latest season of the Pokémon anime, marking a new chapter in the twenty-three-year long story of Ash Ketchum, a trainer from Pallet Town, and his partner Pikachu. In celebration of Ash's new start, let's look at some of the most treasured bonds between him, his companions and enemies, and, of course, Pokemon!</p>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
