@@ -6,9 +6,11 @@ app = Flask(__name__)
 application = app
 bootstrap = Bootstrap(app)
 
+
+
 @app.route('/', methods=['GET', 'POST'])
 def index():
-    return render_template("home.html")
+    return render_template("index.html")
 
 @app.route("/about", methods=["GET", "POST"]) 
 def about():
@@ -22,9 +24,9 @@ def prose():
 def artwork():
     return render_template("artwork.html")
 
-@app.route("/wordandimage", methods=["GET","POST"])
-def wordandimage():
-    return render_template("wordandimage.html")
+@app.route("/gamedevelopment", methods=["GET","POST"])
+def gamedevelopment():
+    return render_template("gamedevelopment.html")
 
 @app.route("/article", methods=["GET","POST"])
 def article():
